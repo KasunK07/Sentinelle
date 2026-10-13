@@ -1,0 +1,73 @@
+{
+  "info": {
+    "_postman_id": "d7f802b1-4345-4f49-b4fe-8043eab4d1f8",
+    "name": "Assessment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47191985",
+    "_collection_link": "https://go.postman.co/collection/47191985-d7f802b1-4345-4f49-b4fe-8043eab4d1f8?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Upload BIN Master",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "uuid": "8c67c2c5-4922-46c4-9cea-e4c06b1647d3",
+              "src": "/C:/Users/KasunKarunarathne/Downloads/Latest BIN List.xlsx"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/bin-master/upload",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "bin-master",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Generate CSV",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "uuid": "aa97f01b-a9e4-4f3a-9948-34d6704b4fe1",
+              "src": "/C:/Users/KasunKarunarathne/Downloads/sample_data_set.csv"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/transactions/generate-csv",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "transactions",
+            "generate-csv"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
